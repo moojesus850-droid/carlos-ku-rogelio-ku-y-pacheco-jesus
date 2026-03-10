@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidades de Yucatán - Guía Completa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .header {
+            background-color: #1a5276;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            color: #1a5276;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 0.5rem;
+        }
+        /* Estilo en Arial 12 para sección de códigos */
+        .code-info {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background-color: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            color: #2c3e50;
+            border-left: 4px solid #27ae60;
+            line-height: 1.5;
+        }
+        .universities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .uni-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .uni-card:hover {
+            transform: translateY(-5px);
+        }
+        .uni-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .uni-details {
+            padding: 1.5rem;
+        }
+        .uni-name {
+            font-size: 1.3rem;
+            color: #1a5276;
+            margin-bottom: 1rem;
+        }
+        .uni-info {
+            color: #555;
+            line-height: 1.6;
+        }
+        .uni-info span {
+            font-weight: bold;
+            color: #f39c12;
+        }
+        .arias-section {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+        .arias-item {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .arias-name {
+            color: #d35400;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .arias-item img {
+            width: 100%;
+            border-radius: 5px;
+            margin: 0.5rem 0;
+        }
+        .arias-item span {
+            color: #1a5276;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #1a5276;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>UNIVERSIDADES DE YUCATÁN: GUÍA COMPLETA</h1>
+        <p>Conoce las principales instituciones de educación superior y escuelas destacadas del estado</p>
+    </header>
+
+    <div class="container">
+        <!-- Sección de 12 Universidades -->
+        <section>
+            <h2 class="section-title">12 UNIVERSIDADES DESTACADAS DEL ESTADO</h2>
+            <div class="universities-grid">
+                <!-- Tarjeta 1 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UNAM+Mérida" alt="UNAM Campus Mérida" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO (UNAM) - CAMPUS MÉRIDA</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Pública<br>
+                            <span>Dirección:</span> Calle 43 No. 634, Col. Centro, Mérida<br>
+                            <span>Áreas destacadas:</span> Ciencias Sociales, Humanidades, Biología<br>
+                            <span>Fundación:</span> 1982
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UADY" alt="Universidad Autónoma de Yucatán" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD AUTÓNOMA DE YUCATÁN (UADY)</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Pública<br>
+                            <span>Dirección:</span> Calle 43 No. 630, Col. Centro, Mérida<br>
+                            <span>Áreas destacadas:</span> Medicina, Ingenierías, Derecho<br>
+                            <span>Fundación:</span> 1922
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UNITEC+Mérida" alt="UNITEC Mérida" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD TECNOLÓGICA DE MÉXICO (UNITEC) - MÉRIDA</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Privada<br>
+                            <span>Dirección:</span> Av. López Portillo No. 4900, Col. México, Mérida<br>
+                            <span>Áreas destacadas:</span> Arquitectura, Diseño, Negocios<br>
+                            <span>Fundación:</span> 1987
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UACM+Yucatán" alt="UACM Yucatán" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD AUTÓNOMA DE LA CIUDAD DE MÉXICO (UACM) - SUCURSAL YUCATÁN</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Pública<br>
+                            <span>Dirección:</span> Calle 26 No. 177, Col. San Sebastián, Mérida<br>
+                            <span>Áreas destacadas:</span> Sociología, Economía, Cultura Digital<br>
+                            <span>Fundación:</span> 2016
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UEM" alt="Universidad del Este de Mérida" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD DEL ESTE DE MÉRIDA (UEM)</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Privada<br>
+                            <span>Dirección:</span> Av. Itzáes No. 150, Col. Itzimná, Mérida<br>
+                            <span>Áreas destacadas:</span> Psicología, Educación, Contaduría<br>
+                            <span>Fundación:</span> 1994
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 6 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UPY" alt="Universidad Politécnica de Yucatán" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD POLITÉCNICA DE YUCATÁN (UPY)</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Pública<br>
+                            <span>Dirección:</span> Calle 42 No. 130, Col. Santa Lucía, Mérida<br>
+                            <span>Áreas destacadas:</span> Ingenierías Agropecuarias, Mecánica, Electrónica<br>
+                            <span>Fundación:</span> 2002
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 7 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UDY" alt="Universidad de Yucatán" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD DE YUCATÁN (UDY)</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Privada<br>
+                            <span>Dirección:</span> Av. Prolongación Paseo de Montejo No. 1001, Col. Francisco de Montejo<br>
+                            <span>Áreas destacadas:</span> Negocios Internacionales, Turismo, Comunicación<br>
+                            <span>Fundación:</span> 1998
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 8 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UCCAY" alt="Universidad Carlos Castillo Peraza" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD CARLOS CASTILLO PERAZA (UCCAY)</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Pública<br>
+                            <span>Dirección:</span> Calle 39 No. 598, Col. Centro, Mérida<br>
+                            <span>Áreas destacadas:</span> Filosofía, Letras, Historia<br>
+                            <span>Fundación:</span> 2009
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 9 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UTM" alt="Universidad Tecnológica Metropolitana" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD TECNOLÓGICA METROPOLITANA DE MÉRIDA</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Privada<br>
+                            <span>Dirección:</span> Calle 20 No. 110, Col. San Antonio Tahdzibichén, Mérida<br>
+                            <span>Áreas destacadas:</span> Ingeniería en Software, Marketing Digital, Logística<br>
+                            <span>Fundación:</span> 2005
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 10 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UNIJAGUAR" alt="Universidad Jaguar" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD JAGUAR (FORMERLY UNIVERSIDAD INTERAMERICANA DEL SUR)</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Privada<br>
+                            <span>Dirección:</span> Av. Colón No. 1200, Col. Moderna, Mérida<br>
+                            <span>Áreas destacadas:</span> Odontología, Enfermería, Administración<br>
+                            <span>Fundación:</span> 1978
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 11 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UAY" alt="Universidad Anáhuac Yucatán" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD ANÁHUAC YUCATÁN</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Privada<br>
+                            <span>Dirección:</span> Av. de las Américas No. 150, Col. Jardines del Sur, Mérida<br>
+                            <span>Áreas destacadas:</span> Derecho, Negocios, Arquitectura<br>
+                            <span>Fundación:</span> 2000
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 12 -->
+                <div class="uni-card">
+                    <img src="https://via.placeholder.com/300x200?text=UADY+Sisal" alt="UADY Campus Sisal" class="uni-img">
+                    <div class="uni-details">
+                        <h3 class="uni-name">UNIVERSIDAD AUTÓNOMA DE YUCATÁN (UADY) - CAMPUS SISAL</h3>
+                        <p class="uni-info">
+                            <span>Tipo:</span> Pública<br>
+                            <span>Dirección:</span> Carretera Mérida-Progreso Km 28.5, Sisal<br>
+                            <span>Áreas destacadas:</span> Ciencias Marinas, Pesquerías, Ecología<br>
+                            <span>Fundación:</span> 1999
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de escuelas en Arias / Calle 16 -->
+        <section>
+            <h2 class="section-title">ESCUELAS EN DIRECCIONES CON "ARIAS" O NÚMERO 16</h2>
+            <div class="arias-section">
+                <div class="arias-item">
+                    <h4 class="arias-name">ESCUELA TELESECUNDARIA LUIS ÁLVAREZ BARRET</h4>
+                    <img src="https://via.placeholder.com/300x150?text=Escuela+Telesecundaria+Dzityá" alt="Escuela Telesecundaria Luis Álvarez Barret">
+                    <p><span>Dirección:</span> Calle 16 s/n, Dzityá, Mérida, Yucatán</p>
+                    <p><span>Tipo:</span> Pública (Secundaria)</p>
+                    <p><span>CCT:</span> 31ETV0034E1</p>
+                    <p><span>Contacto:</span> 9284433</p>
+                </div>
+
+                <div class="arias-item">
+                    <h4 class="arias-name">ESCUELA PRIMARIA GENERAL REVOLUCIÓN</h4>
+                    <img src="https://via.placeholder.com/300x150?text=Escuela+Primaria+Nueva+Chichén" alt="Escuela Primaria General 
